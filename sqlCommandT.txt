@@ -1,0 +1,10 @@
+SELECT
+  `passport`,
+  COUNT(*) AS `count`
+FROM
+  `info`
+GROUP BY
+  `passport`
+ORDER BY
+  `count` DESC
+LIMIT 5
